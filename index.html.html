@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>For Dudu ⚽💜</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Password Screen -->
+  <div id="password-screen" class="centered-card">
+    <div class="emoji-header">💜</div>
+    <h2>Welcome, dudu!</h2>
+    <p class="subtitle">Tell me our anniversary date to enter.</p>
+    <input type="password" id="password-input" placeholder="DDMMYYYY" autocomplete="off"/>
+    <button id="password-btn">Enter</button>
+    <p id="password-error" class="error-msg"></p>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" class="hide">
+    <div class="scoreboard">
+      <span class="score-icon">💚</span>
+      <span id="score">0</span>/3 Goals
+    </div>
+    <div id="football-field">
+      <div id="goal"></div>
+      <div id="ball"></div>
+    </div>
+    <p class="instructions">Kick the lavender heart-ball into the goal 3 times to unlock your surprise!</p>
+    <div id="confetti"></div>
+  </div>
+
+  <!-- Love Letter Screen -->
+  <div id="letter-screen" class="hide">
+    <div class="letter-card">
+      <div class="emoji-header">💌</div>
+      <h2>My Beloved Dudu,</h2>
+      <div class="letter-content" id="letter-content">
+        <!-- The love letter will type out here -->
+      </div>
+      <p class="signature">Yours in endless devotion and unbridled passion,<br>Your Bubu</p>
+    </div>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
